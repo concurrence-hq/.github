@@ -1,26 +1,34 @@
 # Amigo
 
-Enterprise AI agent systems for production use.
+Enterprise healthcare AI platform for voice, messaging, operator workflows, and production data systems.
 
-[Website](https://amigo.ai) · [Docs](https://docs.amigo.ai) · [Security](https://github.com/amigo-ai/.github/blob/main/SECURITY.md) · [Support](https://github.com/amigo-ai/.github/blob/main/SUPPORT.md)
+[Website](https://amigo.ai) · [Docs](https://docs.amigo.ai) · [Developer Guide](https://docs.amigo.ai/developer-guide) · [Security](https://github.com/amigo-ai/.github/blob/main/SECURITY.md) · [Support](https://github.com/amigo-ai/.github/blob/main/SUPPORT.md)
+
+## Public Product Surfaces
+
+| Surface | Best starting point | Notes |
+| --- | --- | --- |
+| Platform API | [`amigo-platform-typescript-sdk`](https://github.com/amigo-ai/amigo-platform-typescript-sdk) | Workspace-scoped API at `api.platform.amigo.ai` for new integrations |
+| Classic API SDKs | [`amigo-typescript-sdk`](https://github.com/amigo-ai/amigo-typescript-sdk) and [`amigo-python-sdk`](https://github.com/amigo-ai/amigo-python-sdk) | Supported org-scoped SDKs for current `api.amigo.ai` deployments |
+| Agent engineering workflows | [`forge-mcp`](https://github.com/amigo-ai/forge-mcp) | Experimental MCP prototype for Agent Forge workflows |
 
 ## Public Repositories
 
-| Repository | Purpose |
-| --- | --- |
-| [`amigo-platform-typescript-sdk`](https://github.com/amigo-ai/amigo-platform-typescript-sdk) | Official TypeScript SDK for the Amigo Platform API. |
-| [`amigo-typescript-sdk`](https://github.com/amigo-ai/amigo-typescript-sdk) | Official TypeScript SDK for the classic Amigo API. |
-| [`amigo-python-sdk`](https://github.com/amigo-ai/amigo-python-sdk) | Official Python SDK for the classic Amigo API. |
-| [`forge-mcp`](https://github.com/amigo-ai/forge-mcp) | Prototype MCP server for Agent Forge workflows. |
+| Repository | Role | Status |
+| --- | --- | --- |
+| [`amigo-platform-typescript-sdk`](https://github.com/amigo-ai/amigo-platform-typescript-sdk) | Official TypeScript SDK for the Amigo Platform API | Primary public SDK for new workspace-scoped integrations |
+| [`amigo-typescript-sdk`](https://github.com/amigo-ai/amigo-typescript-sdk) | Official TypeScript SDK for the Classic Amigo API | Supported for current classic integrations |
+| [`amigo-python-sdk`](https://github.com/amigo-ai/amigo-python-sdk) | Official Python SDK for the Classic Amigo API | Supported for current classic integrations |
+| [`forge-mcp`](https://github.com/amigo-ai/forge-mcp) | MCP server for Agent Forge workflows | Prototype, experimental, and not a stable product contract |
 
-## Product Direction
+## Migration Policy
 
-- The Platform API is the long-term integration surface for new product capabilities.
-- The classic SDKs remain supported for current integrations, and migration to platform-native surfaces will include a clear path for customers.
-- `forge-mcp` is a prototype and should be evaluated as an experimental tool rather than a stable product contract.
+- New workspace-scoped capabilities land on the Platform API first.
+- The Classic API and SDKs remain supported for current deployments.
+- Migration from Classic to Platform will ship with explicit upgrade guidance and a clear customer path before Amigo recommends a move.
 
-## Security And Support
+## Security And Contact
 
 - Report security issues privately to `security@amigo.ai`.
-- Use `contact@amigo.ai` for support and partnership inquiries.
+- Use `contact@amigo.ai` for support, partnership, and enterprise inquiries.
 - Product and API documentation live at [docs.amigo.ai](https://docs.amigo.ai).
