@@ -1,0 +1,17 @@
+name: Feature or documentation request
+description: Explain an integration task that the current public surface does not address.
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Task and current limitation
+      description: Identify the package or documentation page, what you are trying to accomplish, and where the current behavior stops you. Use synthetic examples without customer identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the observable result and any compatibility constraints.
+    validations:
+      required: true

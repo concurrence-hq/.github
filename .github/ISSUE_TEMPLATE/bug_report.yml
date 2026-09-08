@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible package or documentation problem.
+body:
+  - type: markdown
+    attributes:
+      value: Use synthetic data only. Send vulnerabilities to security@amigo.ai and account or provisioning questions to contact@amigo.ai.
+  - type: input
+    id: versions
+    attributes:
+      label: Package and runtime versions
+      placeholder: Package name, installed version, runtime, and operating system
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include steps, expected behavior, actual behavior, and relevant documentation links. Remove credentials and customer data.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Scope and checks
+      description: Which API family or tool is affected? Did this happen with synthetic fixtures or a provisioned environment?
