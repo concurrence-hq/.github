@@ -3,7 +3,7 @@ description: Report a reproducible package or documentation problem.
 body:
   - type: markdown
     attributes:
-      value: Use synthetic data only. Send vulnerabilities to security@amigo.ai and account or provisioning questions to contact@amigo.ai.
+      value: Use synthetic data only. Send vulnerabilities to security@amigo.ai and account or provisioning questions to contact@concurrence.com (legacy contact@amigo.ai).
   - type: input
     id: versions
     attributes:
